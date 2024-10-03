@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"WDD 131 - Dynamic Web Fundamentals - Isaac L. Quelemine".</title>
-    <meta name="author" content="Isaac L. Quelemine" />
     <meta name="description"
         content="WDD 131 - Dynamic Web Fundamentals. This course is designed to teach you the fundamentals of web development using HTML, CSS, and JavaScript. By the end of this course, you will be able to create dynamic, interactive web pages.">
+    <meta name="author" content="Isaac L. Quelemine" />
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,7 +21,7 @@
         <h1>WDD 131: Dynamic Web Fundamentals - Isaac L. Quelemine</h1>
         <nav>
             <ul>
-                <li><a href="www.linkedin.com/in/isaac-quelemine-873633132">LinkedIn</a></li>
+                <li><a href="www.linkedin.com/in/isaac-quelemine-873633132" class="active">LinkedIn</a></li>
                 <li><a href="https://byui.instruture.com/">I-Learn</a></li>
                 <li><a
                         href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
@@ -32,12 +38,33 @@
                 I am currently a student of the BYU-Idaho University and studying Computer Sofeware. My family and
                 country bring me joy. I love to travel and I love to learn new things.</p>
             </p>
+            <img src="/images/Isaac_Image.jpeg" alt="Isaac-image">
+
+            <h2>Gbarnga, Bong County</h2>
+            <p><b>Bong</b> is a county in the north-central portion of the West African nation of Liberia.
+                One of 15 counties that comprise the first-level of administrative division in the nation, it has twelve
+                districts.
+                Gbarnga serves as the capital. The area of the county measures 8,772 square kilometres (3,387 sq mi).
+                As of the 2022 Census, it had a population of 467,502, making it the third-most populous county in
+                Liberia.
+                The county was organized in 1964 and is important for its mining industry.</p>
+            </p>
+            <img src="/images/Flag_of_Bong_County.svg.png" alt="Flag_of_Bong_County">
         </section>
-       <section>
-        
-       </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/">HTML Tutorial</a></li>
+                <li><a href="https://www.w3schools.com/css/">CSS Tutorial</a></li>
+                <li><a href="https://www.w3schools.com/js/">JavaScript Tutorial</a></li>
+                <li><a href="https://www.freecodecamp.org/">Freecodecamp</a></li>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> WDD 131 - Isaac L. Quelemine - Liberia</p>
+        <p>Last Updated: 09/28/2024</p>
+        <p><a href="#">Contact Me</a></p>
+    </footer>
 </body>
 
 </html>
