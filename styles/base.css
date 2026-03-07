@@ -11,7 +11,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400px;
+  /* font-weight: 400px; */
 }
 
 /* Header styles */
@@ -36,7 +36,7 @@ footer {
 }
 
 main h1 {
-  font-weight: 20px;
+  /* font-weight: 20px; */
   text-align: center;
   margin-top: 30px;
 }
@@ -70,7 +70,7 @@ main h1 {
 
 h1 {
   font-size: 30px;
-  font-weight: 400px;
+  /* font-weight: 400px; */
   text-align: center;
   padding: 20px;
   /* margin-bottom: 20px; */
@@ -97,7 +97,7 @@ main {
   border-radius: 5px;
 }
 
-.main-div h3 {
+.main-div h2 {
   background-color: rgb(12, 48, 94);
   color: #fff;
   /* width: 100%; */
@@ -106,7 +106,7 @@ main {
   padding: 10px;
 }
 
-.main-div h4 {
+.main-div h3 {
   /* width: 50%; */
   padding: 10px;
   text-align: center;
@@ -149,7 +149,7 @@ main {
   border-radius: 5px;
 }
 
-.main-div2 h3 {
+.main-div2 h4 {
   background-color: rgb(12, 48, 94);
   color: #fff;
   /* width: 100%; */
