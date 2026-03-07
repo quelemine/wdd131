@@ -1,5 +1,5 @@
 :root {
-  --font-family: 'Roboto', sans-serif;
+  /* --font-family: 'Roboto', sans-serif; */
   --background-color: rgb(12, 48, 94);
 }
 
@@ -9,10 +9,9 @@
   padding: 0;
 }
 
-body {
+/* body {
   font-family: 'Roboto', sans-serif;
-  /* font-weight: 400px; */
-}
+} */
 
 /* Header styles */
 header {
