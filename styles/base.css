@@ -17,14 +17,6 @@ main {
   font-family: Arial, sans-serif;
 }
 
-/* Footer styles */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-
 main h1 {
   /* font-weight: 20px; */
   text-align: center;
