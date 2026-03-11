@@ -148,6 +148,7 @@ main {
 }
 
 footer {
+  padding: 20px;
   background-color: rgb(12, 48, 94);
   text-align: center;
   color: #fff;
