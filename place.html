@@ -21,54 +21,52 @@
 
 <body>
 
-  <body>
+  <header>
+    <h1>Liberia</h1>
+  </header>
 
-    <header>
-      <h1>Liberia</h1>
-    </header>
+  <main>
 
-    <main>
+    <section class="hero">
 
-      <section class="hero">
+      <picture>
+        <source srcset="week03/images/hero-small-image.webp" media="(min-width: 768px)">
+        <img src="week03/images/hero-medium-image.webp" alt="Liberia wildlife">
+      </picture>
 
-        <picture>
-          <source srcset="week03/images/hero-small-image.webp" media="(min-width: 768px)">
-          <img src="week03/images/hero-medium-image.webp" alt="Liberia wildlife">
-        </picture>
-
-        <!-- DATA -->
-        <div class="card data">
-          <h2>Data</h2>
-          <p><strong>Area:</strong> 111,369 sq km</p>
-          <p><strong>Population:</strong> 5,493,000</p>
-          <p><strong>Capital:</strong> Monrovia</p>
-          <p><strong>Languages:</strong> English</p>
-          <p><strong>Currency:</strong> Liberian Dollar</p>
-          <p><strong>Time Zone:</strong> UTC+0</p>
-          <p><strong>Calling Code:</strong> +231</p>
-          <p><strong>Internet TLD:</strong> .lr</p>
-        </div>
-        <!-- WEATHER -->
-        <div class="card weather">
-          <div class="weather-img">
-            <h2>Weather</h2>
-            <img src="week03/images/weather.svg" />
-          </div>
-
-          <p>Temperature: <span id="temp">10</span> °C</p>
-          <p>Conditions: Partly Cloudy</p>
-          <p>Wind: <span id="wind">5</span> km/h</p>
-          <p>Wind Chill: <span id="windchill"></span></p>
+      <!-- DATA -->
+      <div class="card data">
+        <h2>Data</h2>
+        <p><strong>Area:</strong> 111,369 sq km</p>
+        <p><strong>Population:</strong> 5,493,000</p>
+        <p><strong>Capital:</strong> Monrovia</p>
+        <p><strong>Languages:</strong> English</p>
+        <p><strong>Currency:</strong> Liberian Dollar</p>
+        <p><strong>Time Zone:</strong> UTC+0</p>
+        <p><strong>Calling Code:</strong> +231</p>
+        <p><strong>Internet TLD:</strong> .lr</p>
+      </div>
+      <!-- WEATHER -->
+      <div class="card weather">
+        <div class="weather-img">
+          <h2>Weather</h2>
+          <img src="week03/images/weather.svg">
         </div>
 
-      </section>
+        <p>Temperature: <span id="temp">10</span> °C</p>
+        <p>Conditions: Partly Cloudy</p>
+        <p>Wind: <span id="wind">5</span> km/h</p>
+        <p>Wind Chill: <span id="windchill"></span></p>
+      </div>
 
-    </main>
+    </section>
 
-    <footer>
-      <p>© <span id="year"></span> 🙉 Paynesville City, Monrovia - 🙉 Liberia</p>
-      <p>Last Modification: <span id="modified"></span></p>
-    </footer>
-  </body>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> 🙉 Paynesville City, Monrovia - 🙉 Liberia</p>
+    <p>Last Modification: <span id="modified"></span></p>
+  </footer>
+</body>
 
 </html>
