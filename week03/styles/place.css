@@ -57,8 +57,13 @@ header {
 
 @media (min-width: 768px) {
 
-  .weather h2::after {
+  /* .weather h2::after {
     content: " ⛅";
+  } */
+  .weather-img {
+    width: 30%;
+    display: flex;
+    align-items: center;
   }
 
   .mobile-icon {
@@ -77,6 +82,11 @@ header {
   .data,
   .weather {
     text-align: center;
+  }
+
+  .weather-img img {
+    width: 50%;
+
   }
 
 }
