@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="WDD 131 - Dynamic Web Fundamentals by Isaac L. Quelemine. A webpage demonstrating HTML, CSS, responsive design, JavaScript examples and fundamental concepts.">
+  <meta name="author" content="Isaac L. Quelemine">
+  <title>WDD 131 - Dynamic Web Fundamentals - Isaac L. Quelemine</title>
+
+  <!-- CSS LINKS -->
+  <link rel="stylesheet" href="week03/styles/place.css">
+  <script src="week03/scripts/place.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <body>
+
+    <header>
+      <h1>Liberia</h1>
+    </header>
+
+    <main>
+
+      <section class="hero">
+
+        <picture>
+          <source srcset="week03/images/hero-small-image.webp" media="(min-width: 768px)">
+          <img src="week03/images/hero-medium-image.webp" alt="Liberia wildlife">
+        </picture>
+
+        <!-- DATA -->
+        <div class="card data">
+          <h2>Data</h2>
+          <p><strong>Area:</strong> 111,369 sq km</p>
+          <p><strong>Population:</strong> 5,493,000</p>
+          <p><strong>Capital:</strong> Monrovia</p>
+          <p><strong>Languages:</strong> English</p>
+          <p><strong>Currency:</strong> Liberian Dollar</p>
+          <p><strong>Time Zone:</strong> UTC+0</p>
+          <p><strong>Calling Code:</strong> +231</p>
+          <p><strong>Internet TLD:</strong> .lr</p>
+        </div>
+        <!-- WEATHER -->
+        <div class="card weather">
+          <h2>Weather</h2>
+
+          <!-- <img src="week03/images/weather.svg" class="mobile-icon" alt="weather"> -->
+
+          <p>Temperature: <span id="temp">10</span> °C</p>
+          <p>Conditions: Partly Cloudy</p>
+          <p>Wind: <span id="wind">5</span> km/h</p>
+          <p>Wind Chill: <span id="windchill"></span></p>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> 🙉 Paynesville City, Monrovia - 🙉 Liberia</p>
+      <p>Last Modification: <span id="modified"></span></p>
+    </footer>
+  </body>
+
+</html>
