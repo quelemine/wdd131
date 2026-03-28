@@ -1,0 +1,34 @@
+.portrait-img {
+  width: 100%;
+  text-align: center;
+}
+
+.portrait-img img {
+  width: 400px;
+  height: 600px;
+  display: block;
+  margin: 10px auto;
+  min-height: 600px;
+  object-fit: cover;
+
+  /* ANIMATION */
+  opacity: 0;
+  animation: fadeFromBlack 1.5s ease forwards;
+}
+
+@keyframes fadeFromBlack {
+  0% {
+    opacity: 0;
+    filter: brightness(0);
+  }
+
+  100% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+}
