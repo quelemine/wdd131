@@ -129,27 +129,29 @@ temples.forEach(temple => {
   container.appendChild(card);
 });
 //Navmenu
-// displayTemples(temples);
+// 3. CALL the function (The "Do It Now")
+// Make sure this is spelled EXACTLY like the function above!
+displayTemples(temples);
 
+// 4. Navigation/Filter logic
 const navLinks = document.querySelectorAll(".nav-menu a");
-
-navLinks.forEach(link => {
+navLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    const category = link.textContent;
-    let filteredList = [];
+    const filter = link.textContent;
+    let filteredTemples = [];
 
-    if (category === "Old") {
-      filteredList = temple.filter(t => parseInt(t.dedicated.split(",")[0]) < 1900);
-    } else if (category === "New") {
-      filteredList = temple.filter(t => parseInt(t.dedicated.split(",")[0]) > 2000);
-    } else if (category === "Large") {
-      filteredList = temple.filter(t => t.area > 90000);
-    } else if (category === "Small") {
-      filteredList = temple.filter(t => t.area < 10000);
+    if (filter === "Old") {
+      filteredTemples = temples.filter(t => parseInt(t.dedicated.substring(0, 4)) < 1900);
+    } else if (filter === "New") {
+      filteredTemples = temples.filter(t => parseInt(t.dedicated.substring(0, 4)) > 2000);
+    } else if (filter === "Large") {
+      filteredTemples = temples.filter(t => t.area > 90000);
+    } else if (filter === "Small") {
+      filteredTemples = temples.filter(t => t.area < 10000);
     } else {
-      filteredList = temple; // Home
+      filteredTemples = temples;
     }
 
-    displayTemples(filteredList);
+    displayTemples(filteredTemples); // Call it again when a button is clicked
   });
 });
