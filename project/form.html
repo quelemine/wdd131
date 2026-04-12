@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="WDD 131 - Dynamic Web Fundamentals by Isaac L. Quelemine. A webpage demonstrating HTML, CSS, responsive design, JavaScript examples and fundamental concepts.">
+  <meta name="author" content="Isaac L. Quelemine">
+  <title>WDD 131 - Dynamic Web Fundamentals - Isaac L. Quelemine</title>
+
+  <!-- CSS LINKS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- <script src="scripts/getdates.js" defer></script> -->
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html">
+
+      <!-- Product Name -->
+      <label for="product">Product Name</label>
+      <select id="product" name="product" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
+
+      <!-- Rating -->
+      <fieldset>
+        <legend>Overall Rating</legend>
+
+        <label><input type="radio" name="rating" value="1" required> ☆</label>
+        <label><input type="radio" name="rating" value="2"> ☆☆</label>
+        <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+        <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+        <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+
+      </fieldset>
+
+      <!-- Date -->
+      <label for="date">Date of Installation</label>
+      <input type="date" id="date" name="date" required>
+
+      <!-- Features -->
+      <fieldset>
+        <legend>Useful Features</legend>
+
+        <label><input type="checkbox" id="feature1" name="features" value="Durability"> Durability</label>
+        <label><input type="checkbox" id="feature2" name="features" value="Design"> Design</label>
+        <label><input type="checkbox" id="feature3" name="features" value="Performance"> Performance</label>
+        <label><input type="checkbox" id="feature4" name="features" value="Value"> Value</label>
+
+      </fieldset>
+
+      <!-- Review -->
+      <label for="review">Written Review</label>
+      <textarea id="review" name="review"></textarea>
+
+      <!-- Name -->
+      <label for="username">User Name</label>
+      <input type="text" id="username" name="username">
+
+      <!-- Submit -->
+      <input type="submit" value="Submit Review">
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy;2026 | Isaac L. Quelemine | Liberia <span id="currentyear"></span></p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+
+</html>
