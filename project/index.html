@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="WDD 131 - Dynamic Web Fundamentals by Isaac L. Quelemine. A webpage demonstrating HTML, CSS, responsive design, JavaScript examples and fundamental concepts.">
+  <meta name="author" content="Isaac L. Quelemine">
+  <title>Salvation In Christ Ministries</title>
+  <link rel="stylesheet" href="/project/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <script defer src="/project/js/scripts.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Salvation In Christ Ministries</h1>
+    <nav>
+      <button id="menuBtn">☰</button>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/project/about.html">About</a></li>
+        <li><a href="/project/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Our Church</h2>
+    <p>Growing in faith, love, and community.</p>
+  </section>
+
+  <main>
+
+    <section>
+      <h2>Service Times</h2>
+      <p>Sunday Worship: 10:00 AM</p>
+      <p>Wednesday Bible Study: 6:30 PM</p>
+    </section>
+
+    <section>
+      <h2>Upcoming Events</h2>
+      <ul id="eventsList"></ul>
+    </section>
+
+
+    <section class="hero">
+      <img src="/project/images/sicm-hero-children.jpeg" srcset="/project/images/sicm-hero-picture.jpeg 600w,
+               /project/images/sicm-hero-media.jpeg 1000w,
+               /project/images/sicm-hero-praying.jpeg 1600w" sizes="(max-width: 600px) 100vw, 50vw"
+        alt="Church building" loading="lazy">
+      <h2>Welcome to Our Church</h2>
+      <p>Growing in faith, love, and community.</p>
+    </section>
+
+    <section>
+      <h2>Our Community</h2>
+      <img src="/project/images/sicm-hero-children.jpeg" alt="Church community" loading="lazy">
+      <p>We are a loving and welcoming church family.</p>
+    </section>
+
+
+
+    <section>
+      <h2>Visitor Greeting</h2>
+      <input type="text" id="username" placeholder="Enter your name">
+      <button onclick="saveName()">Save</button>
+      <p id="greeting"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Salvation In Christ Ministries</p>
+    <a href="references.html">References</a>
+  </footer>
+
+</body>
+
+</html>

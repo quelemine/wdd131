@@ -1,0 +1,126 @@
+/* Global Styles */
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  font-family: Merriweather, serif;
+}
+
+/* Header */
+header {
+  background-color: #800080;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #c0392b;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Sections */
+section {
+  padding: 1.5rem;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+input,
+textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+button {
+  background-color: #800080;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #800080;
+  color: white;
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #menuBtn {
+    display: none;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
